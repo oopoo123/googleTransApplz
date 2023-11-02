@@ -136,7 +136,7 @@
       <x>315</x>
       <y>80</y>
       <width>75</width>
-      <height>23</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -178,7 +178,7 @@
       <x>10</x>
       <y>80</y>
       <width>300</width>
-      <height>23</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
