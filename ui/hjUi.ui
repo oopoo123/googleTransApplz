@@ -130,7 +130,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="bnt1">
+   <widget class="QPushButton" name="bnt_trans">
     <property name="geometry">
      <rect>
       <x>315</x>
@@ -151,7 +151,7 @@
      <string>번 역</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="init_btn">
+   <widget class="QPushButton" name="reset_btn">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -172,7 +172,7 @@
      <string>초기화</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit1">
+   <widget class="QLineEdit" name="input_kor_test">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -185,7 +185,7 @@
      <string notr="true">background-color : rgb(255, 255, 127); color : rgb(0, 0, 0); border-color : rgb(255, 170, 0); border-style : solid; border-width : 3px</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit1">
+   <widget class="QTextEdit" name="output_eng_text">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -198,7 +198,7 @@
      <string notr="true">background-color : rgb(170, 255, 255); color : rgb(0, 0, 255); border-color : rgb(0, 0, 127); border-style : double; border-width : 1px</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit2">
+   <widget class="QTextEdit" name="output_jp_text">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -211,7 +211,7 @@
      <string notr="true">background-color : rgb(170, 255, 127); color : rgb(85, 0, 127); border-color :rgb(85, 0, 0); border-style : dotted; border-width : 1px</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit3">
+   <widget class="QTextEdit" name="output_cn_text">
     <property name="geometry">
      <rect>
       <x>20</x>
