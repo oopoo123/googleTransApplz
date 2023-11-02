@@ -48,8 +48,8 @@ class MyGoogleTrans(QMainWindow, form_class):
         self.output_chn_text.clear()
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv) # 앱 닫기 위해서 안함 안닫김
+    app = QApplication(sys.argv) # 앱 닫기 위해서(안함 안닫김)
     myApp = MyGoogleTrans()
     myApp.show()
-    sys.exit(app.exec_()) # 앱 닫기 위해서 안함 안닫김
+    sys.exit(app.exec_()) # 앱 닫기 위해서(안함 안닫김)
 
