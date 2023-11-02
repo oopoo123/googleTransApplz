@@ -19,7 +19,6 @@ class MyGoogleTrans(QMainWindow, form_class):
         self.statusBar().showMessage("google Trans App v1.0 Copyright ⓒ HJP")
 
         self.bnt_trans.clicked.connect(self.trans_function) # trans_function의 시그널(signar)
-        self.input_kor_test.returnPressed.connect(self.changePrint)
         self.reset_btn.clicked.connect(self.reset)
 
     def trans_function(self): # trans_function의 슬롯(slot)
@@ -36,10 +35,6 @@ class MyGoogleTrans(QMainWindow, form_class):
         self.output_eng_text.append(trans_eng.text)
         self.output_jap_text.append(trans_jap.text)
         self.output_chn_text.append(trans_chn.text)
-
-    def changePrint(self):
-        user_text = self.input_kor_test.text()
-        print(user_text)
 
     def reset(self): # 슬롯
         self.input_kor_test.clear()
