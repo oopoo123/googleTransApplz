@@ -15,3 +15,4 @@ result3 = trans.translate(str, dest="zh-cn") # 한글 -> 중국어
 print(f"입력하신 '{str}'은 영어로 '{result1.text}' 입니다")
 print(f"입력하신 '{str}'은 일본어로 '{result2.text}' 입니다")
 print(f"입력하신 '{str}'은 중국어로 '{result3.text}' 입니다")
+
