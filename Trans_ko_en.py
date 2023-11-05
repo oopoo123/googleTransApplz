@@ -23,23 +23,25 @@ class GoogleKE(QMainWindow, form_class):
         self.reset_btn.clicked.connect(self.reset)
 
     def trans_en(self):
-        trans_eng = self.input_eng_test.text()
+        trans_kor = self.ko_text.text()
         trans = googletrans.Translator()
 
-        trans_kor = trans.translate(trans_eng, dest='ko')
-        self.output_kor_text.append(trans_kor.text)
+        trans_k = trans.translate(trans_kor, dest='en')
+        self.en_text.append(trans_k.text)
 
 
     def trans_ko(self):
-        trans_kor = self.input_kor_test.text()
+        trans_eng = self.en_line.text()
         trans = googletrans.Translator()
 
-        trans_eng = trans.translate(trans_kor, dest='en')
-        self.output_eng_text.append(trans_eng.text)
+        trans_e = trans.translate(trans_eng, dest='ko')
+        self.ko_line.append(trans_e.text)
 
     def reset(self):
-        self.input_kor_test.clear()
-        self.input_eng_test.clear()
+        self.ko_text.clear()
+        self.en_line.clear()
+        self.en_text.clear()
+        self.ko_line.clear()
 
 
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>540</height>
+    <width>395</width>
+    <height>541</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -141,8 +141,15 @@
     </property>
     <property name="font">
      <font>
-      <family>HY헤드라인M</family>
+      <family>Javanese Text</family>
+      <pointsize>8</pointsize>
      </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:rgb(255, 255, 0)</string>
@@ -230,7 +237,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>395</width>
      <height>21</height>
     </rect>
    </property>

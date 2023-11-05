@@ -10,55 +10,16 @@
     <height>500</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Bahnschrift SemiBold Condensed</family>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="en_btn">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>251</x>
-      <y>40</y>
-      <width>75</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>HY목각파임B</family>
-      <pointsize>15</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="mouseTracking">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(170, 0, 255);background-color:rgb(85, 255, 255);border-color:rgb(0, 0, 0);border-style : solid;border-width : 3px</string>
-    </property>
-    <property name="text">
-     <string>번역</string>
-    </property>
-    <property name="checkable">
-     <bool>false</bool>
-    </property>
-    <property name="checked">
-     <bool>false</bool>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-    <property name="default">
-     <bool>false</bool>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -92,11 +53,21 @@
       <height>40</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">color:rgb(0, 0, 255);background-color:rgb(255, 255, 127);border-color:rgb(255, 85, 0);border-style : solid;border-width : 3px</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="en_text">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -104,6 +75,13 @@
       <width>200</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color:rgb(255, 0, 127);background-color:rgb(255, 255, 127);border-color:rgb(255, 85, 0);border-style : solid;border-width : 3px</string>
@@ -163,32 +141,15 @@
       <height>40</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(255, 0, 127);background-color:rgb(170, 255, 127);border-color:rgb(85, 85, 255);border-style : solid;border-width : 3px</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="ko_btn">
-    <property name="geometry">
-     <rect>
-      <x>252</x>
-      <y>250</y>
-      <width>75</width>
-      <height>40</height>
-     </rect>
-    </property>
     <property name="font">
      <font>
-      <family>HY목각파임B</family>
-      <pointsize>15</pointsize>
+      <pointsize>13</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(170, 0, 255);background-color:rgb(85, 255, 255);border-color:rgb(0, 0, 0);border-style : solid;border-width : 3px</string>
-    </property>
-    <property name="text">
-     <string>번역</string>
+     <string notr="true">color:rgb(255, 0, 127);background-color:rgb(170, 255, 127);border-color:rgb(85, 85, 255);border-style : solid;border-width : 3px</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -221,14 +182,61 @@
       <height>71</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">color:rgb(0, 0, 255);background-color:rgb(170, 255, 127);border-color:rgb(85, 85, 255);border-style : solid;border-width : 3px</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="en_btn">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>40</y>
+      <width>75</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>번역</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ko_btn">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>250</y>
+      <width>75</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>번역</string>
     </property>
    </widget>
    <widget class="QPushButton" name="reset_btn">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>120</x>
       <y>420</y>
       <width>75</width>
       <height>30</height>
@@ -236,14 +244,19 @@
     </property>
     <property name="font">
      <font>
-      <family>HY중고딕</family>
       <pointsize>15</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0, 0, 0);background-color:rgb(170, 170, 255);border-color:rgb(0, 0, 0);border-style : solid;border-width : 3px</string>
+    <property name="focusPolicy">
+     <enum>Qt::WheelFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="toolTipDuration">
+     <number>1</number>
     </property>
     <property name="text">
      <string>초기화</string>
